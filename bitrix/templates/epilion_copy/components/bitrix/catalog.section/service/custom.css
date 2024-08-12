@@ -1,0 +1,142 @@
+
+/*----  СТИЛИ КОСМЕТОЛОГИИ  ----*/
+.b-removal-dl_rows{
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+}
+.preparat-block .b-removal-ico__checkmark{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+}
+.preparat-block .b-removal-ico__ico-checkmark, section .b-removal-ico__ico-checkmark2 {
+    width: 18px;
+    height: 12px;
+    fill: transparent;
+    stroke: #C7DBDE;
+    transition: all 0.4s ease-out;
+    box-sizing: border-box;
+}
+.preparat-block .b-removal-ico__ico-checkmark2{
+    fill: #C7DBDE;
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+    padding-top: 4px;
+    height: 16px;
+    justify-self: center;
+    margin-right: 15.55px;
+}
+.b-removal-ico__ico-checkmark.rotated{
+    transform: rotateZ(180deg);
+    stroke: #0DA8AD;
+}
+.preparat-block .b-removal-ico__ico-openArrow{
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 12px;
+    height: 30px;
+    margin-left: 10px;
+    padding: 10px 0;
+    fill: inherit;
+}
+.preparat-block .b-removal-dl__dd{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    width: 100px;
+    min-width: fit-content;
+}
+.preparat-block .b-removal-dl__dt{
+    align-items: flex-start;
+}
+.preparat-block .b-removal-dl__title:hover{
+    color: #484A4A;
+}
+.preparat-block .b-removal-dl__dd a{
+    display: none;
+}
+.preparat-block .b-removal-dl__dd .prep_more{
+    display: flex;
+    flex-shrink: 0;
+    align-items: flex-start;
+    color: #484A4A;
+    fill: #484A4A;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    cursor: pointer;
+}
+.preparat-block .b-removal-dl__dd .prep_more:hover{
+    color: #0DA8AD;
+    fill: #0DA8AD;
+}
+
+/*----  Раскрывающий блок с препаратами  ----*/
+.preparats{
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 5px 42px 5px 60px;
+    align-items: center;
+}
+.preparats dl{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    min-height: 40px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    color: #484A4A;
+    margin: 0;
+}
+.preparats dl:hover{
+    background: #DEECEE;
+}
+.preparats dt, .preparats dd{
+    font: inherit;
+    display: flex;
+    height: 100%;
+    flex-grow: 2;
+}
+.preparats dd{
+    justify-content: flex-end;
+    font: inherit;
+    width: 100px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+/*----  Раскрывающий блок с препаратами - КОНЕЦ  ----*/
+@media screen and (max-width:540px){
+    .preparats{
+        padding: 8px 22px 8px 35px;
+    }
+    .preparats dl{
+        min-height: 26px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .preparats dl:not(:last-of-type){
+        margin-bottom: 5px;
+    }
+    .preparat-block .b-removal-dl__dd a{
+        font-size: 13px;
+        line-height: 18px;
+        align-self: center;
+    }
+    .b-removal-dl, .b-removal-dl-inf{
+        padding: 0 10px;
+    }
+    .b-removal-dl__dt{
+        padding: 8px 8px 8px 0;
+    }
+}

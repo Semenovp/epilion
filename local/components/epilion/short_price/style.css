@@ -1,0 +1,45 @@
+/*    ПЕРЕОПРЕДЕЛЕНИЕ СТИЛЕЙ    */
+section.main-slider{
+    margin-bottom: 0;
+    padding-bottom: 70px;
+}
+/*    ОСНОВНАЯ СЕКЦИЯ    */
+section.short_price{
+    background-color:rgba(243, 246, 246, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 70px;
+}
+.short_price h2{
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    margin: 70px 0 48px;
+}
+.short_price>div:last-child{
+    margin-top: 48px;
+    display: flex;
+}
+.short_price>div:last-child a{
+    height: 50px;
+    padding: 14px 40px;
+    border-radius: 4px;
+}
+.short_price>div:last-child a.card_request{
+    background-color: rgba(1, 190, 196, 1);
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    margin-right: 32px;
+}
+.short_price>div:last-child a.allprice{
+    background-color: transparent;
+    color: rgba(32, 89, 114, 1);
+    border: solid 1px rgba(32, 89, 114, 1);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}

@@ -1,0 +1,77 @@
+.online_call{
+    display: flex;
+    position: fixed;
+    bottom: 32px;
+    right: 34px;
+    width: 60px;
+    height: 60px;
+    padding: 14px;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    border: 2px solid #FFF;
+    background: linear-gradient(180deg, #C0A8C6 0%, #C0A8C6 100%);
+    box-shadow: 0px 2px 30px 0px rgba(62, 50, 65, 0.15);
+    z-index: 100;
+    cursor: pointer;
+    transition: width 0.3s linear;
+    overflow: hidden;
+}
+.onlinecall_hover{
+    width: 160px;
+    transition: width 0.3s linear;
+    background: #B596BC;
+}
+.online_call-icon{
+    width: 32px;
+    height: 32px;
+    fill: white;
+    flex-shrink: 0;
+    margin: auto 0 auto 1px;
+}
+.onlinecall_hover .online_call-icon{
+    margin: auto 0 auto 3px;
+}
+.online_call>span{
+    display: flex;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: fit-content;
+    padding-right: 12px;
+}
+@media screen and (max-width: 540px) {
+    .online_call{
+        bottom: 45px;
+        right: 15px;
+    }
+}
+
+
+.online_call .animate_icon {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 5px;
+    transform: skewX(-50deg);
+    left: -150%;
+    animation-name:onlinecall;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+    animation-timing-function: cubic-bezier(0.1,0.7,1,1);
+
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.6), rgba(200, 200, 255, 0.1));
+}
+
+@keyframes onlinecall{
+    0% {
+        left: -700%;
+    }
+    100% {
+        left: 150%;
+    }
+}

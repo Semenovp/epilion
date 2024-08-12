@@ -1,0 +1,10 @@
+<?xml version="1.0"  standalone="no" encoding="utf-8"?>
+<svg viewBox="0 0 486 739" xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <style>:root>svg{display:none}:root>svg:target{display:block}</style>
+    <svg id="bolt" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <path d="M14.3801 2.78857C14.4656 2.38948 14.2718 1.98281 13.908 1.79778C13.5442 1.61276 13.1015 1.69571 12.8293 1.99987L2.62932 13.3999C2.39265 13.6644 2.33355 14.0433 2.47843 14.3673C2.6233 14.6914 2.9451 14.9 3.30004 14.9H11.1868L9.62002 22.2114C9.5345 22.6105 9.72825 23.0172 10.092 23.2022C10.4558 23.3872 10.8986 23.3043 11.1708 23.0001L21.3708 11.6001C21.6074 11.3356 21.6665 10.9567 21.5217 10.6326C21.3768 10.3086 21.055 10.1 20.7 10.1H12.8133L14.3801 2.78857Z" fill="white"/>
+    </svg>
+    <svg id="checkMark" width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <path d="M24.375 10.8125L15 20.1875L5.625 10.8125" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+</svg>

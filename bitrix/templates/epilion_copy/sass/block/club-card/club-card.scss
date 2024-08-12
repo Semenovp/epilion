@@ -1,0 +1,235 @@
+.club-card{
+    width: 100%;
+    padding-top: 14px;
+    &__h1{
+        margin-bottom: 37px;
+    }
+    &__txt{
+        width: 100%;
+        margin-bottom: 69px;
+        p{
+            font-size: 16px;
+            line-height: 28px;
+        }
+    }
+}
+
+.club-card-list{
+    width: 100%;
+    margin-bottom: 79px;
+}
+
+.club-card-list-item{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 69px;
+    &__txt{
+        width: calc(100% - 440px);
+    }
+    &__h2{
+        margin-top: 0;
+        letter-spacing: -1px;
+    }
+    p{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    &__pic{
+        width: 400px;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1500px){
+
+
+}
+@media screen and (max-width: 1250px){
+    .club-card{
+
+        &__h1{
+
+        }
+        &__txt{
+            margin-bottom: 40px;
+            p{
+
+            }
+        }
+    }
+
+    .club-card-list{
+
+    }
+
+    .club-card-list-item{
+        margin-bottom: 50px;
+        &__txt{
+            width: calc(60% - 30px);
+        }
+        &__h2{
+
+        }
+        p{
+
+        }
+        &__pic{
+            width: 40%;
+        }
+    }
+
+}
+@media screen and (max-width: 1050px){
+
+
+}
+@media screen and (max-width: 993px){
+    .club-card{
+
+        &__h1{
+
+        }
+        &__txt{
+
+            p{
+
+            }
+        }
+    }
+
+    .club-card-list{
+
+    }
+
+    .club-card-list-item{
+
+        &__txt{
+
+        }
+        &__h2{
+
+        }
+        p{
+
+        }
+        &__pic{
+
+        }
+    }
+
+}
+
+@media screen and (max-width: 767px){
+    .club-card{
+
+        &__h1{
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        &__txt{
+            margin-bottom: 40px;
+            p{
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    }
+
+    .club-card-list{
+
+    }
+
+    .club-card-list-item{
+        margin-bottom: 20px;
+        flex-flow: column-reverse;
+        &__txt{
+            width: 100%;
+        }
+        &__h2{
+            margin-bottom: 16px;
+        }
+        p{
+            font-size: 14px;
+            line-height: 20px;
+        }
+        &__pic{
+            width: 100%;
+            margin-bottom: 16px;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 550px){
+    .club-card{
+
+        &__h1{
+
+        }
+        &__txt{
+
+            p{
+
+            }
+        }
+    }
+
+    .club-card-list{
+
+    }
+
+    .club-card-list-item{
+
+        &__txt{
+
+        }
+        &__h2{
+
+        }
+        p{
+
+        }
+        &__pic{
+
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 500px){
+
+
+}
+
+@media screen and (max-width: 440px){
+
+
+}
+
+@media screen and (max-width: 430px) {
+
+
+}
+
+@media screen and (max-width: 400px){
+
+
+
+}
+
+@media screen and (max-width: 320px){
+
+
+}

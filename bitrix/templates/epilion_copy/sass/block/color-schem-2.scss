@@ -1,0 +1,159 @@
+.blue-btn{
+    background: #01BEC5;
+    &:focus{
+        background: #01BEC5;
+    }
+    &:hover{
+        background: #EF9F9F;
+    }
+
+}
+
+.blue-btn-2{
+    background: #EF9F9F;
+    &:focus{
+
+    }
+    &:hover{
+
+    }
+
+}
+
+.border-white-btn{
+
+    &:focus{
+
+    }
+    &:hover{
+
+    }
+
+}
+
+.purple-border-btn{
+    border: 2px solid #EF9F9F;
+    color: #EF9F9F;
+    &:focus{
+        border: 2px solid #EF9F9F;
+        color: #EF9F9F;
+    }
+    &:hover{
+        background: #EF9F9F;
+        color: #fff;
+    }
+
+}
+
+.blue-border-btn{
+    border: 2px solid #01BEC5;
+    &:focus{
+        border: 2px solid #01BEC5;
+    }
+    &:hover{
+        border: 2px solid #EF9F9F;
+        background: #EF9F9F;
+    }
+
+}
+
+.purple-btn{
+    background: #EF9F9F;
+    &:focus{
+
+    }
+    &:hover{
+
+    }
+
+}
+
+.play-btn{
+
+    &__ico{
+
+    }
+    &:hover{
+
+        .play-btn__ico{
+
+        }
+    }
+}
+
+.play-btn-v2{
+    &__ico{
+
+    }
+    &:hover{
+        .play-btn-v2__ico{
+
+        }
+    }
+}
+
+
+.loop-btn{
+
+    &__ico{
+
+    }
+    &:hover{
+
+        .play-btn__ico{
+
+        }
+    }
+}
+
+.close{
+
+    &:hover{
+
+    }
+}
+
+.clear-btn{
+
+    &__ico{
+
+    }
+    &:hover{
+        .clear-btn__ico{
+
+        }
+    }
+}
+
+.b-main-catalog-item{
+    &:hover {
+        background: #FBE8E2;
+    }
+}
+
+.equipmant-slider .owl-prev:hover svg {
+    fill: #EF9F9F;
+}
+
+.equipmant-slider .owl-next:hover svg {
+    fill: #EF9F9F;
+}
+
+.review-slide__quote-ico{
+    fill: #EF9F9F;
+}
+
+.loop-btn{
+    background: #EF9F9F;
+}
+
+.play-btn{
+    background: #EF9F9F;
+}
+
+.callback-form__quote-bg-ico {
+    fill: rgba(251, 232, 226, 0.5);;
+}
+.balloon-link a{
+    color: #D49A9A;
+}

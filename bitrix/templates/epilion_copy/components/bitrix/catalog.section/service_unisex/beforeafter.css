@@ -1,0 +1,86 @@
+/*-----  Стили BEFORE / AFTER  ----*/
+.ba-frame{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.ba-container {
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+}
+.fBefore, .fAfter{
+    display: inline-block;
+    min-height: 100%;
+    width: 40px;
+    background-color: transparent;
+    position: relative;
+    z-index: 100;
+}
+.fAfter{
+    right: 0;
+}
+.ba-before{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 6px;
+}
+.ba-after{
+    height: 100%;
+    background-size: cover;
+    background-clip: content-box;
+    padding-left: calc(50% + 10px);
+    position: relative;
+    top: -100%;
+    border-radius: 6px;
+}
+.ba-divider{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 5;
+    top: -200%;
+    border-radius: 6px;
+}
+#draggable{
+    width: 20px;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    justify-content: center;
+}
+.divider-stick{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3px;
+    height: 100%;
+    background-color: #01BEC5;
+    border: solid 2px #01BEC5;
+    border-radius: 6px;
+    opacity: 0.7;
+    box-sizing: border-box;
+}
+.divider-rombLeft, .divider-rombRight{
+    display: inline-flex;
+    width: 0;
+    height: 0;
+}
+.divider-rombLeft{
+    margin-right: 5px;
+    border-right: 20px solid #01BEC5;
+    border-top:  5px solid transparent;
+    border-bottom:  5px solid transparent;
+}
+.divider-rombRight{
+    margin-left: 5px;;
+    border-left: #01BEC5 20px solid;
+    border-top:  5px solid transparent;
+    border-bottom:  5px solid transparent;
+}
+/*-----  Конец BEFORE / AFTER  ----*/

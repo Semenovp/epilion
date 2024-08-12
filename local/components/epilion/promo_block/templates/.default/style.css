@@ -1,0 +1,189 @@
+.promo_block{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0 50px;
+}
+.promo_block .container{
+    width: 90%;
+    height: fit-content;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.promo_block .container.reverse{
+    flex-direction: row-reverse;
+}
+.promo_block_content{
+    display: flex;
+    flex-direction: column;
+    max-width: calc(50% - 52px);
+}
+.promo_block_content h2{
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 400;
+    color: #494A4A;
+    flex-grow: 0;
+    margin-bottom: 48px;
+}
+.promo_block_text{
+    flex-grow: 1;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #494A4A;
+    margin-bottom: 42px;
+}
+.promo_block_content .buttons{
+    display: flex;
+    flex-grow: 0;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+.promo_block .primary_button{
+    display: flex;
+    flex-wrap: nowrap;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: #01BEC4;
+    padding: 14px 40px;
+    margin-right: 32px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #FFFFFF;
+    border-color: #0DA8AD;
+    border-radius: 4px;
+    text-wrap: nowrap;
+}
+.promo_block .primary_button:hover{
+    background-color: #0DA8AD;
+    border-color: #0DA8AD;
+}
+.promo_block .secondary_button{
+    display: flex;
+    flex-wrap: nowrap;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding: 14px 40px;
+    margin-right: 32px;
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #205972;
+    border: solid 1px #205972;
+    border-radius: 4px;
+    text-wrap: nowrap;
+}
+.promo_block .secondary_button:hover{
+    background-color: #0DA8AD;
+    border-color: #0DA8AD;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.promo_block_image{
+    flex-shrink: 0;
+    height: 100%;
+    margin-left: 48px;
+}
+.promo_block .reverse .promo_block_image{
+    margin-left: 0;
+    margin-right: 48px;
+}
+.promo_block_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1330px) {
+    .promo_block{
+        padding: 75px 0 50px;
+    }
+    .promo_block_content h2{
+        font-size: 40px;
+        line-height: 48px;
+        font-weight: 400;
+        color: #494A4A;
+        flex-grow: 0;
+        margin-bottom: 40px;
+    }
+    .promo_block_image{
+        height: unset;
+        width: 30%;
+        aspect-ratio: 1/1;
+        margin-left: 40px;
+    }
+    .promo_block_content{
+        display: flex;
+        flex-direction: column;
+        max-width: unset;
+    }
+}
+@media screen and (max-width: 993px) {
+    .promo_block{
+        padding: 60px 0 30px;
+    }
+}
+@media screen and (max-width: 910px) {
+    .promo_block_image{
+        width: 50%;
+        aspect-ratio: unset;
+    }
+    .promo_block a{
+    }
+}
+@media screen and (max-width: 800px) {
+    .promo_block .container{
+        flex-direction: column-reverse;
+    }
+    .promo_block .container.reverse{
+        flex-direction: column-reverse;
+    }
+    .promo_block_image{
+        width: 100%;
+        margin:0 0 40px;
+    }
+    .promo_block_content{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .promo_block_content h2 {
+        font-size: 36px;
+        line-height: 44px;
+        margin-bottom: 20px;
+    }
+    .promo_block_text{
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .promo_block .container{
+        width: 100%;
+        padding: 0 10px;
+    }
+    .promo_block_image{
+        margin-bottom: 24px;
+    }
+    .promo_block_content h2 {
+        font-size: 32px;
+        line-height: 38px;
+        margin-bottom: 16px;
+    }
+    .promo_block_text{
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 24px;
+    }
+    .promo_block .secondary_button{
+        margin-top: 24px;
+    }
+}

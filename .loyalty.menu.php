@@ -1,0 +1,39 @@
+<?
+$aMenuLinks = Array(
+    Array(
+        "Прайс",
+        "/upload/totalprice.pdf",
+        Array(),
+        Array(),
+        ""
+    ),
+    Array(
+        "Услуги",
+        "/service/",
+        Array(),
+        Array(),
+        ""
+    ),
+    Array(
+        "Клубные карты",
+        "/card/",
+        Array(),
+        Array(),
+        ""
+    ),
+    Array(
+        "Акции",
+        "/sales/",
+        Array(),
+        Array(),
+        ""
+    ),
+    Array(
+        "Отзывы",
+        "/otzivi/",
+        Array(),
+        Array(),
+        ""
+    )
+);
+?>
