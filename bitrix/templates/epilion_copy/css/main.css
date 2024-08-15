@@ -28746,3 +28746,156 @@ input[type='phone'].reg-form-input {
     fill:#01BEC5;
 }
 /* УПРОЩЕННАЯ ФОРМА ЗАПИСИ  - КОНЕЦ */
+/* add new styles to massage */
+.section-content-main h2 {
+    margin-bottom: 25px;
+    margin-top: 70px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 120%;
+}
+.section-content-main p {
+    font-size: 16px;
+    line-height: 160%;
+    margin-bottom: 10px;
+}
+.tab-zone-section {
+    margin: 70px 0;
+}
+.tab-zone-section h2 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+    color: #494a4a;
+    margin-bottom: 40px;
+}
+.tab-zone-section h3 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 120%;
+    color: #494a4a;
+    margin-bottom: 24px;
+}
+.tab-zone-section .tab-zone-content {
+    width: 80%;
+    margin: 0 auto;
+}
+.tab-zone-section .btn-tabs {
+    margin-top: 80px;
+    border: 1px solid #205972;
+    border-radius: 4px;
+    padding: 14px 40px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: #205972;
+    background: none;
+}
+.tab-zone-section .c-tab-zone__tab {
+    width: 730px;
+}
+.tab-zone-section .c-tab-zone__txt {
+    width: calc(100% - 730px);
+}
+.link-to-services .service-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link-to-services .service-wrap .service-item {
+    margin-right: 8px;
+    position: relative;
+}
+.link-to-services .service-wrap .service-item:hover .title {
+    bottom: 62%;
+}
+.link-to-services .service-wrap .service-item:hover a {
+    /*bottom: 50%;*/
+    opacity: 1;
+}
+.link-to-services .service-wrap .service-item a {
+    display: block;
+    border-radius: 4px;
+    padding: 14px 40px;
+    width: 190px;
+    height: 50px;
+    position: absolute;
+    background: #fd4471;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    bottom: 25%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .3s;
+}
+.link-to-services .service-wrap .service-item .title {
+    position: absolute;
+    bottom: 68px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    transition: 0.7s;
+}
+
+.link-to-services {
+    margin: 70px 0;
+}
+.link-to-services h2 {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+    text-align: center;
+    color: #494a4a;
+    margin-bottom: 48px;
+}
+.after-text-massage {
+    background: #F3F6F7;
+}
+.after-text-massage .effect-wrap {
+    display: flex;
+}
+.after-text-massage .effect-wrap .pic {
+    width: 30%;
+}
+.after-text-massage .effect-wrap .effect-text {
+    width: 70%;
+    padding-left: 40px;
+}
+.how-to-massage {
+    background: #F3F6F7;
+    padding: 70px 0;
+}
+.after-text-massage h2 {
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 120%;
+    text-align: center;
+}
+.how-to-massage .box-how {
+    border-radius: 8px;
+    padding: 36px;
+    background: #fff;
+}
+.how-to-massage .box-how h2 {
+    margin-bottom: 24px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 120%;
+}
+.massage-zone {
+    width: 60%;
+    justify-content: flex-start;
+}
+.cut-text-massage h2 {
+    margin-bottom: 40px;
+}

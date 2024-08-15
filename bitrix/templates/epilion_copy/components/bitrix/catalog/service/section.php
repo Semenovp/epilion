@@ -18,7 +18,6 @@ $obCache = new CPHPCache();
 $obCache->CleanDir();
 ?>
  <article class="content">
-
 <?
 $intSectionID = $APPLICATION->IncludeComponent(
 				"bitrix:catalog.section",
@@ -99,7 +98,7 @@ $intSectionID = $APPLICATION->IncludeComponent(
 					'CURRENCY_ID' => $arParams['CURRENCY_ID'],
 					'HIDE_NOT_AVAILABLE' => $arParams["HIDE_NOT_AVAILABLE"],
 					'HIDE_NOT_AVAILABLE_OFFERS' => $arParams["HIDE_NOT_AVAILABLE_OFFERS"],
-					"SECTION_USER_FIELDS" => array("UF_ICONS","UF_USLUGA","UF_SEO","UF_BANER_TEXT","UF_BANNER_PC","UF_BANER_IPAD","UF_BANER_MOBILE","UF_PHOTO_ZH","UF_PHOTO_M","UF_ZONA","UF_UNISEX","UF_ALTSERVICETEXT","UF_CALCTYPE"),
+					"SECTION_USER_FIELDS" => array("UF_ICONS","UF_USLUGA","UF_SEO","UF_BANER_TEXT","UF_BANNER_PC","UF_BANER_IPAD","UF_BANER_MOBILE","UF_PHOTO_ZH","UF_PHOTO_M","UF_ZONA","UF_UNISEX","UF_ALTSERVICETEXT","UF_CALCTYPE", "UF_HOW_TO", "UF_AFTER_PRICE"),
 					'LABEL_PROP' => $arParams['LABEL_PROP'],
 					'LABEL_PROP_MOBILE' => $arParams['LABEL_PROP_MOBILE'],
 					'LABEL_PROP_POSITION' => $arParams['LABEL_PROP_POSITION'],
@@ -149,10 +148,17 @@ $intSectionID = $APPLICATION->IncludeComponent(
 				$component
 			);
 			?>
+     <?php
+     $g_template = "video_service";
+     if (!in_array([84,86], $arResult["VARIABLES"]["SECTION_ID"]))   {
+         $g_template = "gallery_massage";
+     }
+
+     ?>
 			  <section class="video-procedure">
 					<?$APPLICATION->IncludeComponent(
 	"bitrix:news.list", 
-	"video_service", 
+	$g_template,
 	array(
 		"ACTIVE_DATE_FORMAT" => "d.m.Y",
 		"ADD_SECTIONS_CHAIN" => "N",
@@ -224,6 +230,8 @@ $intSectionID = $APPLICATION->IncludeComponent(
 );?>
       </section>
       <!-- Отзывы-->
+<!--    --><?php //var_dump($arResult["VARIABLES"]["SECTION_ID"]); ?>
+     <?php if (in_array([84,86], $arResult["VARIABLES"]["SECTION_ID"])) : ?>
       <section class="b-review">
 
 <?$APPLICATION->IncludeComponent(
@@ -295,4 +303,5 @@ $intSectionID = $APPLICATION->IncludeComponent(
 );?>
 
       </section>
+     <?endif; ?>
 			</article>

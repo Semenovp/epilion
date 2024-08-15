@@ -1,6 +1,6 @@
 <? if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die(); ?>
 <!--Секция калькулятора для всех услуг кроме Лазерной эпиляции (без зон и процедур)-->
-     <section class="select-zone other-service">
+     <section class="select-zone other-service test2">
         <div class="container">
 			 <?$APPLICATION->IncludeComponent("bitrix:breadcrumb","top",Array(
 					"START_FROM" => "0", 

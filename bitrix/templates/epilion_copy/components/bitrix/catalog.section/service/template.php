@@ -44,7 +44,8 @@ else
 //Проверяем есть ли у раздела подразделы
 //$secCount = CIBlockSection::GetCount(array('IBLOCK_ID' => $arParams['IBLOCK_ID'],'SECTION_ID' => $arResult['ORIGINAL_PARAMETERS']['SECTION_ID'], ">LEFT_BORDER" => 0, "<RIGHT_BORDER" => 1000));
 $intCount = CIBlockSection::GetCount(array('IBLOCK_ID' => $arParams['IBLOCK_ID'],'SECTION_ID' => $arResult['TAB'][0]['ID'], "DEPTH_LEVEL" => 3));
-    if (!in_array($arResult["UF_CALCTYPE"]["XML_ID"], ['section1','section2','section3','section4']))
+//var_dump($arParams['IBLOCK_ID']);
+    if (!in_array($arResult["UF_CALCTYPE"]["XML_ID"], ['section1','section2','section3','section4', 'section5', 'section6']))
         {
             http_response_code(404);
             include ($_SERVER["DOCUMENT_ROOT"].'/404.php');
@@ -66,62 +67,29 @@ $intCount = CIBlockSection::GetCount(array('IBLOCK_ID' => $arParams['IBLOCK_ID']
           </div>
         </div>
       </section>
-
     <?require_once("include/".$arResult["UF_CALCTYPE"]["XML_ID"].".php");?>
       <!-- Контакты 2-->
-      <section class="main-contact_2">
-        <div class="container">
-          <div class="b-main-contact_2">
-				<?php
-				$APPLICATION->IncludeComponent(
-					"bitrix:main.include", 
-					"template2", 
-					array(
-						"AREA_FILE_SHOW" => "file",
-						"AREA_FILE_SUFFIX" => "inc",
-						"AREA_FILE_RECURSIVE" => "Y",
-						"EDIT_TEMPLATE" => "",
-						"COMPONENT_TEMPLATE" => "template2",
-						"PATH" => "/include/contact_index_phone_v2.php"
-					),
-					false
-				);
-				?>
-				<?php
-				$APPLICATION->IncludeComponent(
-	"bitrix:main.include", 
-	"template2", 
-	array(
-		"AREA_FILE_SHOW" => "file",
-		"AREA_FILE_SUFFIX" => "inc",
-		"AREA_FILE_RECURSIVE" => "Y",
-		"EDIT_TEMPLATE" => "",
-		"COMPONENT_TEMPLATE" => "template2",
-		"PATH" => "/include/contact_index_adress_v2.php",
-		"COMPOSITE_FRAME_MODE" => "A",
-		"COMPOSITE_FRAME_TYPE" => "AUTO"
-	),
-	false
-);
-				?>
-			<?php
-				$APPLICATION->IncludeComponent(
-					"bitrix:main.include", 
-					"template2", 
-					array(
-						"AREA_FILE_SHOW" => "file",
-						"AREA_FILE_SUFFIX" => "inc",
-						"AREA_FILE_RECURSIVE" => "Y",
-						"EDIT_TEMPLATE" => "",
-						"COMPONENT_TEMPLATE" => "template2",
-						"PATH" => "/include/contact_index_mail_v2.php"
-					),
-					false
-				);
-				?>
-          </div>
+<section class="main-contact">
+    <div class="container">
+        <div class="b-main-contact">
+            <?php
+            $APPLICATION->IncludeComponent(
+                "bitrix:main.include",
+                "template2",
+                array(
+                    "AREA_FILE_SHOW" => "file",
+                    "AREA_FILE_SUFFIX" => "inc",
+                    "AREA_FILE_RECURSIVE" => "Y",
+                    "EDIT_TEMPLATE" => "",
+                    "COMPONENT_TEMPLATE" => "template2",
+                    "PATH" => "/include/contact1.php"
+                ),
+                false
+            );
+            ?>
         </div>
-      </section>
+    </div>
+</section>
 
 		<?$arSelect = Array("ID", "IBLOCK_ID", "NAME", "DATE_ACTIVE_FROM","PROPERTY_*", 'PREVIEW_PICTURE','DETAIL_PICTURE','PREVIEW_TEXT');
 			$arFilter = Array("IBLOCK_ID"=>11, "PROPERTY_RAZDEL"=>$arResult['ID'], "ACTIVE"=>"Y");
@@ -131,7 +99,7 @@ $intCount = CIBlockSection::GetCount(array('IBLOCK_ID' => $arParams['IBLOCK_ID']
 			 $arFields = $ob->GetFields();
 			 $arProps = $ob->GetProperties();
 			$class="device";
-			 ?>
+         ?>
 			<?
 			$property_enums = CIBlockPropertyEnum::GetList(Array( "SORT"=>"ASC"), Array("IBLOCK_ID"=>11, "CODE"=>"TYPE"));
 			while($enum_fields = $property_enums->GetNext())
@@ -154,7 +122,6 @@ $intCount = CIBlockSection::GetCount(array('IBLOCK_ID' => $arParams['IBLOCK_ID']
 					<?else:?>
 					<div class="container">
 					<?endif;?>
-					
 					<div class="b-device">
 					 <?if ((!$arFields['PREVIEW_PICTURE']) && (!$arProps['PHOTO_DO']['VALUE']) && (!$arProps['PHOTO_POSLE']['VALUE'])):?>
 					 <div class="b-device-item b-device-item--none-pic">
