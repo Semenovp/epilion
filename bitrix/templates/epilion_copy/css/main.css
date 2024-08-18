@@ -28899,3 +28899,9 @@ input[type='phone'].reg-form-input {
 .cut-text-massage h2 {
     margin-bottom: 40px;
 }
+.wrap-massage-price .short_price_item-service>aside a {
+    background-color:#FD4471;
+}
+.tab-zone-massage-content .blue-btn-2 {
+    background:#FD4471;
+}

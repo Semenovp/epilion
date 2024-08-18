@@ -33,7 +33,7 @@
                     </div>
                     <div class="back_layout">
                     </div>
-                    <a href="#">Подробнее</a>
+                    <a href="/service/massazh/lpg-cellu-m6-integral/">Подробнее</a>
                 </div>
                 <div class="service-item">
                     <img src="/bitrix/templates/epilion_copy/img/massage/s_i_3.png" alt="">
@@ -42,7 +42,7 @@
                     </div>
                     <div class="back_layout">
                     </div>
-                    <a href="#">Подробнее</a>
+                    <a href="/service/massazh/beautylizer-therapy-rsl/">Подробнее</a>
                 </div>
                 <div class="service-item">
                     <img src="/bitrix/templates/epilion_copy/img/massage/s_i_2.png" alt="">
@@ -51,10 +51,14 @@
                     </div>
                     <div class="back_layout">
                     </div>
-                    <a href="#">Подробнее</a>
+                    <a href="/service/massazh/ruchnoy-massazh-tela/">Подробнее</a>
                 </div>
             </div>
         </section>
+
+
+    </div>
+    <div class="wrap-massage-price">
         <? $APPLICATION->IncludeComponent(
             "epilion:short_price.elements",
             ".default",
@@ -89,8 +93,8 @@
             ),
             false
         ); ?>
-
     </div>
+
 </section>
 <section class="indications-contraindications">
     <div class="container">

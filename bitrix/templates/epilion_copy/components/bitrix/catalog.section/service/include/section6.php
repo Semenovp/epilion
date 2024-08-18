@@ -28,7 +28,7 @@
 
             <!--ТАБы навигации М/Ж - Конец-->
 
-            <div class="tab-content tab-zone-content ">
+            <div class="tab-content tab-zone-content tab-zone-massage-content">
               <?foreach($arResult['TAB'] as $key =>$tab):?>
 			  
 		        <div class="tab-pane fade <?if ($key==0) echo "active in";?>" id="<?=$tab['CODE'];?>">
@@ -94,9 +94,9 @@
                                       <span class="b-removal-dl__price" data-minprice="<?=($fromPrice > 0)?$fromPrice:$arFields['PROPERTY_PRICE2_VALUE']?>"><?="".($fromPrice > 0)?$fromPrice:$arFields['PROPERTY_PRICE2_VALUE']." ₽" ?></span>
                                       <div class="prep_more">
                                           <a href="javascript:void(0)" data-link="<?=$arFields['DETAIL_PAGE_URL']?>">Подробнее</a>
-                                          <svg class="icon b-removal-ico__ico-openArrow">
-                                              <use xlink:href="<?= SITE_TEMPLATE_PATH ?>/img/svg-sprite/sprite.svg#openArrow"></use>
-                                          </svg>
+<!--                                          <svg class="icon b-removal-ico__ico-openArrow">-->
+<!--                                              <use xlink:href="--><?php //= SITE_TEMPLATE_PATH ?><!--/img/svg-sprite/sprite.svg#openArrow"></use>-->
+<!--                                          </svg>-->
                                       </div>
                                  </dd>
                                </dl>
